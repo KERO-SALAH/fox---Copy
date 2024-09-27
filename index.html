@@ -1,0 +1,211 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./tasks/add_task.css" />
+    <link rel="stylesheet" href="./make_post/make_post.css" />
+    <link rel="stylesheet" href="./style/all.css" />
+  </head>
+  <body style="position: relative">
+    <header id="header">
+      <div class="inner_header">
+        <div class="logo">
+          <img src="./img/Untitled design.png" alt="" />
+        </div>
+        <nav>
+          <a href=""><li>home</li></a>
+          <a href=""><li>about</li></a>
+          <a href=""><li>porfolio</li></a>
+          <a href=""><li>contact</li></a>
+        </nav>
+        <div class="menu_icon" id="menu_icon" onclick="openSidebar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <div
+      style="height: 100vh; text-align: center; background-color: whitesmoke"
+      class="border40 margin4 welcome flex_post flex_dc flex_jcc_post"
+    >
+      <div class="logooo">
+        <img
+          src="https://i.ibb.co/jRRc1R8/Picsart-24-05-18-13-42-30-197.png"
+          alt=""
+        />
+      </div>
+      <div class="w">
+        <h1>welcome to my website</h1>
+      </div>
+      <div class="options flex_post gap20">
+        <div class="btn-elegant_post flex_post">
+          <a class="smooth-scroll" href="#chose_id">--Levels--</a>
+        </div>
+        <div class="btn-elegant_post flex_post">kero</div>
+        <div class="btn-elegant_post flex_post">kero</div>
+      </div>
+    </div>
+    <div
+      id="chose_id"
+      class="border40 margin4 flex_post flex_jcc_post"
+      style="
+        height: 100vh;
+        background-color: antiquewhite;
+        justify-content: space-around;
+      "
+    >
+      <div class="mariam">
+        <div
+          style="background-color: antiquewhite"
+          class="flex_post flex_jcc_post flex_dc"
+        >
+          <h1 style="text-align: center">chose Your level</h1>
+          <div class="option_levels gap20 flex_post flex_jcc_post">
+            <div class="first">
+              <div
+                onmouseover="change('./img/levels/1.png')"
+                onmouseleave="change('./img/levels/Escape Level I.png')"
+                class="btn-elegant_post flex_post"
+              >
+                <h4>First</h4>
+              </div>
+            </div>
+            <div class="first">
+              <div
+                onmouseover="change('./img/levels/4.png')"
+                onmouseleave="change('./img/levels/Escape Level I.png')"
+                class="btn-elegant_post flex_post"
+              >
+                <a href="First Semester of Sophomore Year.html"
+                  ><h4>Second</h4></a
+                >
+              </div>
+            </div>
+            <div class="first">
+              <div
+                onmouseover="change('./img/levels/2.png')"
+                onmouseleave="change('./img/levels/Escape Level I.png')"
+                class="btn-elegant_post flex_post"
+              >
+                <h4>Third</h4>
+              </div>
+            </div>
+            <div class="first">
+              <div
+                onmouseover="change('./img/levels/3.png')"
+                onmouseleave="change('./img/levels/Escape Level I.png')"
+                class="btn-elegant_post flex_post"
+              >
+                <h4>Fourth</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img_level">
+          <img id="level_img" src="./img/levels/Escape Level I.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <aside id="sidebar">
+      <div class="logo">
+        <div class="inner_logo" style="display: flex">
+          <img
+            src="https://i.ibb.co/jRRc1R8/Picsart-24-05-18-13-42-30-197.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <nav>
+        <a href="#"><li>home</li></a>
+        <a href="#"><li>about</li></a>
+        <a href="#"><li>portfolio</li></a>
+        <a href="#"><li>contact</li></a>
+      </nav>
+    </aside>
+
+    <!-- ldfklfkdlkflkd -->
+
+    <div id="footer"></div>
+
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <script src="./js/main.js"></script>
+
+    <!-- <div id="go_home">
+      
+     
+    <script>
+      fetch("go_home.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("go_home").innerHTML = data;
+        });
+    </script>
+    </div> -->
+    <a href="/index.html">
+      <img class="home_logo" src="./img/Untitled design (4).png" alt="" />
+    </a>
+    <a href="#header" id="scrollToTop" class="scroll-top smooth-scroll">
+      <img class="scrofll-top" src="./img/Untitled design (5).png" alt="" />
+    </a>
+    <style>
+      img.home_logo,
+      .scroll-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 9;
+        background-color: #325e93;
+        opacity: 0.9;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+
+        transition: all 0.3s;
+
+        cursor: pointer;
+        box-shadow: 0 0 15px rgb(0 0 0 / 8%);
+      }
+      .home_logo {
+        right: 22px;
+        bottom: 20px;
+      }
+      .scroll-top {
+        width: 45px;
+        height: 45px;
+        right: 27px;
+        bottom: 75px;
+      }
+    </style>
+    <script>
+      document.querySelectorAll(".smooth-scroll").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        });
+      });
+    </script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
