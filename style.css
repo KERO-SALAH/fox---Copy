@@ -432,6 +432,7 @@ img {
 }
 .img150px {
   width: 150px;
+  padding: 20px;
 }
 /* -------------footer------------ */
 .foot {
@@ -458,7 +459,7 @@ img {
   align-content: center;
   justify-content: center;
 }
-.mariam {
+.kero-section {
   padding: 10%;
   display: flex;
   justify-content: space-between;

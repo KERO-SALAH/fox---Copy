@@ -47,11 +47,11 @@
         <h1>welcome to my website</h1>
       </div>
       <div class="options flex_post gap20">
-        <div class="btn-elegant_post flex_post">
-          <a class="smooth-scroll" href="#chose_id">--Levels--</a>
+        <div href="#chose_id" class="smooth-scroll btn-elegant_post flex_post">
+          <a>Levels</a>
         </div>
-        <div class="btn-elegant_post flex_post">kero</div>
-        <div class="btn-elegant_post flex_post">kero</div>
+        <div class="btn-elegant_post flex_post">schedule</div>
+        <!-- <div class="btn-elegant_post flex_post">kero</div> -->
       </div>
     </div>
     <div
@@ -63,7 +63,7 @@
         justify-content: space-around;
       "
     >
-      <div class="mariam">
+      <div class="kero-section">
         <div
           style="background-color: antiquewhite"
           class="flex_post flex_jcc_post flex_dc"
@@ -115,6 +115,51 @@
         </div>
       </div>
     </div>
+    <div
+      id="chose_id"
+      class="border40 margin4 flex_post flex_jcc_post"
+      style="
+        height: 100vh;
+        background-color: antiquewhite;
+        justify-content: space-around;
+      "
+    >
+      <div class="kero-section">
+        <div
+          style="
+            background-color: antiquewhite;
+            padding: 58px;
+            border-radius: 20px;
+          "
+          class="flex_post flex_jcc_post flex_dc"
+        >
+          <h1 style="text-align: center">Choose your department</h1>
+          <img
+            class="img150px"
+            src="https://i.ibb.co/Vq82qBt/clipboard.png"
+            alt=""
+          />
+
+          <div class="option_levels gap20 flex_post flex_jcc_post">
+            <div class="first">
+              <div class="btn-elegant_post flex_post">
+                <h4>CS</h4>
+              </div>
+            </div>
+            <div class="first">
+              <div class="btn-elegant_post flex_post">
+                <a href="First Semester of Sophomore Year.html"><h4>AI</h4></a>
+              </div>
+            </div>
+            <div class="first">
+              <div class="btn-elegant_post flex_post">
+                <h4>SE</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <aside id="sidebar">
       <div class="logo">
@@ -138,7 +183,7 @@
     <div id="footer"></div>
 
     <script>
-      fetch("footer.html")
+      fetch("./footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer").innerHTML = data;
