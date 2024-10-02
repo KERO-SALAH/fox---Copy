@@ -1,8 +1,8 @@
 <a href="/index.html">
-  <img class="home_logo" src="/img/Untitled design (4).png" alt="" />
+  <img class="home_logo" src="./img/Untitled design (4).png" alt="" />
 </a>
 <a href="#header" id="scrollToTop" class="scroll-top smooth-scroll">
-  <img class="scrofll-top" src="/img/Untitled design (5).png" alt="" />
+  <img class="scrofll-top" src="./img/Untitled design (5).png" alt="" />
 </a>
 <style>
   img.home_logo,
@@ -36,15 +36,14 @@
   }
 </style>
 <script>
-    document.querySelectorAll('.smooth-scroll').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+  document.querySelectorAll(".smooth-scroll").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
+      const target = document.querySelector(this.getAttribute("href"));
       target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+        behavior: "smooth",
+        block: "start",
       });
+    });
   });
-});
-
 </script>

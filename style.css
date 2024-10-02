@@ -1,11 +1,11 @@
 /* تنسيق عام */
-/* * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  font-family: "SUSE", sans-serif;
-} */
+* {
+  font-family: cursive;
+  font-family: "Marhey", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 
 a {
   color: rgb(255, 255, 255);
@@ -170,6 +170,7 @@ nav a li {
 
 #sidebar nav {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   gap: 20px;
   padding-left: 20px;
@@ -460,7 +461,7 @@ img {
   justify-content: center;
 }
 .kero-section {
-  padding: 10%;
+  /* padding: 10%; */
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -471,4 +472,12 @@ img {
 }
 .border40 {
   border-radius: 40px;
+}
+.TOS{
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #ff7a18, #af002d);
+  margin:3%;
+  border-radius: 20px;
+
 }
