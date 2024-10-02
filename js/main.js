@@ -14,45 +14,11 @@ document.querySelectorAll(".smooth-scroll").forEach((anchor) => {
   });
 });
 // الهيدر
-
-  // Define the header content as a string
-  const headerContent = `
- 
-  <header>
-    <div class="inner_header">
-      <div class="logo">
-        <img
-          src="https://i.ibb.co/jRRc1R8/Picsart-24-05-18-13-42-30-197.png"
-          alt=""
-        />
-      </div>
-      <nav>
-        <a href="../index.html"><li>home</li></a>
-        <a href=""><li>about</li></a>
-        <a href=""><li>porfolio</li></a>
-        <a href=""><li>contact</li></a>
-      </nav>
-      <div class="menu_icon" id="menu_icon" onclick="openSidebar()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </header>
-
-
-
-`;
-
-// Inject the header content into the div with id "header"
-document.getElementById("header").innerHTML = headerContent;
-
-
-// fetch("../header.html")
-//   .then((response) => response.text())
-//   .then((data) => {
-//     document.getElementById("header").innerHTML = data;
-//   });
+fetch("../header.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("header").innerHTML = data;
+  });
 //الفوتر
 fetch("../footer.html")
   .then((response) => response.text())
